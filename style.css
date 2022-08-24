@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 body {
     font-family:'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 nav {
-
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -12,26 +13,36 @@ nav {
     z-index: 1;
     background-color: white;
     top: 0;
+    left: 0;
     width: 100%;
+    padding: 4px 16px;
+    box-sizing: border-box;
 }
-.logo {
-    height: 70px;
-    width: 140px;
-    margin: 0px -10px;
+.cuadrolog{
+    display: flex;
+    height: 48px;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item {
+    height: 24px;
+    width: 24px;
 }
 .buscar {
-    width: 1000px;
+    width: 100%;
     padding: 0px 8px;
-    border: 2px solid #C6C6C6;
     height: 48px;
     border-radius: 24px;
     display: flex;
     align-items: center;
+    background-color: #E9E9E9;
 }
 .finder {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     background-color: transparent; 
     border: none; 
     height: 100%; 
@@ -41,15 +52,14 @@ nav {
 .bloque {
     height: 48px;
     border-radius: 24px;
-    padding: 0px 12px;
+    padding: 0px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px;
 }
-.log {
-    width: 70px;
-    background-color: #ECECEC;
+.ini {
+    background-color: black;
+    color: white;
 
 }
 .sign {
@@ -71,36 +81,99 @@ nav {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-right: 10px;
 }
 .imagen {
     border-radius: 20px;
     border: 0;
     width: 236px;
     display: block;
-    margin-bottom: 16px;
-
 }
 .contenedor {
     columns: 6 236px;
     padding-bottom: 24px;
     position: relative;
-    padding-top: 74px;
+    padding-top: 72px;
 }
 .cuadro {
-    display: block;
+    display: flex;
     position: relative;
+    width: auto;
+    justify-content: center;
+    padding: 0 8px 34px;
 }
-.boton {
+.iconos{
+    display: flex;
+    align-items: center;
+
+}
+.cama{
+    display: flex;
+    position: relative;
+    width: 236px;
+    cursor: pointer;
+}
+.roj {
     position: absolute;
-    background-color: #EE0327;
-    border-radius: 24px;
-    height: 48px;
-    width: 80px;
     color: white;
-    border: 0px;
-    margin: 10px;
-    top: 0px;
+    background-color: #EE0327;
+    font-size: 16px;
+    border: 0;
+    top: 0;
     right: 0;
-    z-index: 7;
+    margin: 12px;
+}
+.efect {
+    display: flex;
+    position: absolute;
+    margin: 12px;
+    bottom: 0;
+    right: 0;;
+}
+.inter{
+    width: 16px;
+    height: 14px; 
+}
+.more {
+    width: 24px;
+    height: 24px; 
+}
+.con{
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.388);
+    border-radius: 20px;
+    visibility: hidden;
+}
+.cama:hover > .capa{
+    visibility: visible;
+}
+@media screen and (max-width: 847px){
+    .ini {
+        background-color: white;
+        color: black;
+    }
+    .des {
+        display: none;
+    }
+    .bloque{
+        padding: 0;
+    }
+    .um {
+        padding-right: 14px;
+    }
+    p {
+        padding-left: 14px;
+    }
 }
